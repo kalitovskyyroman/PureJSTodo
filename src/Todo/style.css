@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.header {
+  text-align: center;
+  font-size: 30px;
+}
+
+.header_position {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.input {
+  border: 0;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+
+.add_btn_section {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.add_btn_section__btn {
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.todo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.todo__title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.todo__body {
+  font-size: 20px;
+}
+
+.sort__section {
+  text-align: center;
+}

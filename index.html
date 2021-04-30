@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="./src/Todo/style.css">
+</head>
+<body>
+
+    <header class="container header header_position">TODO</header>
+
+    <section class="container">
+        <form action="#">
+            <fieldset>
+                <legend>
+                    Title
+                </legend>
+
+                <input id="title_input" class="input" type="text" required placeholder="Enter todo title">
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Text
+                </legend>
+
+                <input id="body_input" class="input" type="text" placeholder="Enter todo body">
+            </fieldset>
+            <div class="add_btn_section">
+                <button id="add_todo" class="add_btn_section__btn" type="submit">Add</button>
+            </div>
+        </form>
+
+        
+    </section>
+
+    <section class="sort__section">
+        <div class="container">
+            <button id="title_sort">Sort by title</button>
+            <button id="title_sort_asc">ASC</button>
+            <button id="title_sort_desc">DESC</button>            
+        </div>
+        
+        <div class="container">
+            <button id="body_sort">Sort by body</button>
+            <button id="body_sort_asc">ASC</button>
+            <button id="body_sort_desc">DESC</button>            
+        </div>
+
+    </section>
+
+    <section class="container todos">
+
+    </section>
+
+    <script src="./src/Todo/index.js"></script>
+</body>
+</html>
