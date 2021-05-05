@@ -1,4 +1,4 @@
-import * as sort from './sort.js';
+import { titleSortASC, titleSortDESC, bodySortASC, bodySortDESC } from './sort.js';
 
 const todos = [
   { title: 'a', body: 'a' },
@@ -53,19 +53,19 @@ const add_btn = document.getElementById('add_todo');
 add_btn.click(() => addTodo(todos, todos_place, updateTodos));
 
 const title_sort = document.getElementById('title_sort');
-title_sort.click(() => updateTodos(sort.titleSortASC(todos), todos_place));
+title_sort.addEventListener('click', () => updateTodos(titleSortASC(todos), todos_place));
 
 const title_sort_asc = document.getElementById('title_sort_asc');
-title_sort_asc.click(() => updateTodos(sort.titleSortASC(todos), todos_place));
+title_sort_asc.addEventListener('click', () => updateTodos(titleSortASC(todos), todos_place));
 
 const title_sort_desc = document.getElementById('title_sort_desc');
-title_sort_desc.click(() => updateTodos(sort.titleSortDESC(todos), todos_place));
+title_sort_desc.addEventListener('click', () => updateTodos(titleSortDESC(todos), todos_place));
 
 const body_sort = document.getElementById('body_sort');
-body_sort.click(() => updateTodos(sort.bodySortASC(todos), todos_place));
+body_sort.addEventListener('click', () => updateTodos(bodySortASC(todos), todos_place));
 
 const body_sort_asc = document.getElementById('body_sort_asc');
-body_sort_asc.click(() => updateTodos(sort.bodySortASC(todos), todos_place));
+body_sort_asc.addEventListener('click', () => updateTodos(bodySortASC(todos), todos_place));
 
 const body_sort_desc = document.getElementById('body_sort_desc');
-body_sort_desc.click(() => updateTodos(sort.bodySortDESC(todos), todos_place));
+body_sort_desc.addEventListener('click', () => updateTodos(bodySortDESC(todos), todos_place));
