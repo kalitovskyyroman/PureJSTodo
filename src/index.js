@@ -1,4 +1,5 @@
 import { titleSortASC, titleSortDESC, bodySortASC, bodySortDESC } from './sort.js';
+import './style.css';
 
 const todos = [
   { title: 'a', body: 'a' },
